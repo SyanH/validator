@@ -1,29 +1,29 @@
 {
-  "name": "mix/validator",
-  "description": "Validator based on PSR-7 standard",
+  "name": "syan/validator",
+  "description": "Validator",
   "type": "library",
   "keywords": [
-    "mix",
+    "webman",
     "validate",
     "validator",
     "validation"
   ],
-  "homepage": "https://openmix.org/mix-php",
+  "homepage": "https://github.com/SyanH",
   "license": "Apache-2.0",
   "authors": [
     {
-      "name": "liu,jian",
-      "email": "coder.keda@gmail.com"
+      "name": "syan",
+      "email": "mzsongyan@gmail.com"
     }
   ],
   "require": {
     "php": ">=7.0.0",
     "ext-mbstring": "*",
-    "psr/http-message": "^1.0"
+    "workerman/webman-framework": "^1.0"
   },
   "autoload": {
     "psr-4": {
-      "Mix\\Validator\\": "src/"
+      "Syan\\Validator\\": "src/"
     }
   },
   "require-dev": {

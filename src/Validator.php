@@ -3,7 +3,7 @@
 namespace Mix\Validator;
 
 use Mix\Validator\Exception\InvalidArgumentException;
-use Psr\Http\Message\UploadedFileInterface;
+use Webman\Http\UploadFile;
 
 /**
  * Class Validator
@@ -18,7 +18,7 @@ abstract class Validator implements \JsonSerializable
     protected $attributes = [];
 
     /**
-     * @var UploadedFileInterface[]
+     * @var UploadFile[]
      */
     protected $uploadedFiles = [];
 
@@ -56,7 +56,7 @@ abstract class Validator implements \JsonSerializable
     /**
      * Validator constructor.
      * @param array $attributes
-     * @param UploadedFileInterface[] $uploadedFiles
+     * @param UploadFile[] $uploadedFiles
      */
     public function __construct(array $attributes, array $uploadedFiles = [])
     {

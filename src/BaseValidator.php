@@ -3,7 +3,7 @@
 namespace Mix\Validator;
 
 use Mix\Validator\Exception\InvalidArgumentException;
-use Psr\Http\Message\UploadedFileInterface;
+use Webman\Http\UploadFile;
 
 /**
  * Class BaseValidator
@@ -56,7 +56,7 @@ abstract class BaseValidator
 
     /**
      * 上传的文件
-     * @var UploadedFileInterface[]
+     * @var UploadFile[]
      */
     public $uploadedFiles = [];
 

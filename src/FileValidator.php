@@ -2,7 +2,7 @@
 
 namespace Mix\Validator;
 
-use Psr\Http\Message\UploadedFileInterface;
+use Webman\Http\UploadFile;
 
 /**
  * Class FileValidator
@@ -47,11 +47,11 @@ class FileValidator extends BaseValidator
      */
     protected function upload()
     {
-        /** @var UploadedFileInterface $value */
+        /** @var UploadFile $value */
         $value = $this->attributeValue;
-        if ($value->getError() > 0) {
+        if ($value->getUploadErrorCode() > 0) {
             // 设置错误消息
-            switch ($value->getError()) {
+            switch ($value->getUploadErrorCode()) {
                 case UPLOAD_ERR_INI_SIZE:
                     $defaultMessage = "上传的{$this->name}大小超过了 php.ini 中 upload_max_filesize 选项限制的值.";
                     break;
@@ -91,9 +91,9 @@ class FileValidator extends BaseValidator
      */
     protected function mimes($param)
     {
-        /** @var UploadedFileInterface $value */
+        /** @var UploadFile $value */
         $value = $this->attributeValue;
-        if (!in_array($value->getClientMediaType(), $param)) {
+        if (!in_array($value->getUploadMineType(), $param)) {
             // 设置错误消息
             $defaultMessage = "{$this->attribute}类型不在" . implode(',', $param) . "范围内.";
             $this->setError(__FUNCTION__, $defaultMessage);
@@ -110,7 +110,7 @@ class FileValidator extends BaseValidator
      */
     protected function maxSize($param)
     {
-        /** @var UploadedFileInterface $value */
+        /** @var UploadFile $value */
         $value = $this->attributeValue;
         if ($value->getSize() > $param * 1024) {
             // 设置错误消息

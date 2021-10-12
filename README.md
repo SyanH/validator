@@ -153,7 +153,7 @@ public function check($fieldValue): bool
 - mimes：输入你想要限制的文件mime类型，[MIME参考手册](http://www.w3school.com.cn/media/media_mimeref.asp)
 - maxSize：允许的文件最大尺寸，单位 KB
 
-验证成功后模型类会增加一个同名属性，该属性为 Psr\Http\Message\UploadedFileInterface 类的实例化对象，可直接调用 $this->[attributeName]->moveTo($targetPath) 移动到你需要存放的位置
+验证成功后模型类会增加一个同名属性，该属性为 Webman\Http\UploadFile 类的实例化对象，可直接调用 $this->[attributeName]->moveTo($targetPath) 移动到你需要存放的位置
 
 ## 静态调用
 
