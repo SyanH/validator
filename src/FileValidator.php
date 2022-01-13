@@ -1,12 +1,12 @@
 <?php
 
-namespace Mix\Validator;
+namespace Syan\Validator;
 
 use Webman\Http\UploadFile;
 
 /**
  * Class FileValidator
- * @package Mix\Validator
+ * @package Syan\Validator
  */
 class FileValidator extends BaseValidator
 {

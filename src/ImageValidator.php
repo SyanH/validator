@@ -1,10 +1,10 @@
 <?php
 
-namespace Mix\Validator;
+namespace Syan\Validator;
 
 /**
  * Class ImageValidator
- * @package Mix\Validator
+ * @package Syan\Validator
  */
 class ImageValidator extends FileValidator
 {

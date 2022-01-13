@@ -1,12 +1,12 @@
 <?php
 
-namespace Mix\Validator;
+namespace Syan\Validator;
 
-use Mix\Validator\Validate;
+use Syan\Validator\Validate;
 
 /**
  * Class UrlValidator
- * @package Mix\Validator
+ * @package Syan\Validator
  */
 class UrlValidator extends BaseValidator
 {

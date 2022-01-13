@@ -1,10 +1,10 @@
 <?php
 
-namespace Mix\Validator;
+namespace Syan\Validator;
 
 /**
  * Class CompareValidator
- * @package Mix\Validator
+ * @package Syan\Validator
  */
 class CompareValidator extends BaseValidator
 {

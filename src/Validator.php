@@ -1,13 +1,13 @@
 <?php
 
-namespace Mix\Validator;
+namespace Syan\Validator;
 
-use Mix\Validator\Exception\InvalidArgumentException;
+use Syan\Validator\Exception\InvalidArgumentException;
 use Webman\Http\UploadFile;
 
 /**
  * Class Validator
- * @package Mix\Validator
+ * @package Syan\Validator
  */
 abstract class Validator implements \JsonSerializable
 {
@@ -31,21 +31,21 @@ abstract class Validator implements \JsonSerializable
      * @var array
      */
     protected $validators = [
-        'integer' => \Mix\Validator\IntegerValidator::class,
-        'double' => \Mix\Validator\DoubleValidator::class,
-        'alpha' => \Mix\Validator\AlphaValidator::class,
-        'alphaNumeric' => \Mix\Validator\AlphaNumericValidator::class,
-        'string' => \Mix\Validator\StringValidator::class,
-        'in' => \Mix\Validator\InValidator::class,
-        'date' => \Mix\Validator\DateValidator::class,
-        'email' => \Mix\Validator\EmailValidator::class,
-        'phone' => \Mix\Validator\PhoneValidator::class,
-        'url' => \Mix\Validator\UrlValidator::class,
-        'compare' => \Mix\Validator\CompareValidator::class,
-        'match' => \Mix\Validator\MatchValidator::class,
-        'call' => \Mix\Validator\CallValidator::class,
-        'file' => \Mix\Validator\FileValidator::class,
-        'image' => \Mix\Validator\ImageValidator::class,
+        'integer' => \Syan\Validator\IntegerValidator::class,
+        'double' => \Syan\Validator\DoubleValidator::class,
+        'alpha' => \Syan\Validator\AlphaValidator::class,
+        'alphaNumeric' => \Syan\Validator\AlphaNumericValidator::class,
+        'string' => \Syan\Validator\StringValidator::class,
+        'in' => \Syan\Validator\InValidator::class,
+        'date' => \Syan\Validator\DateValidator::class,
+        'email' => \Syan\Validator\EmailValidator::class,
+        'phone' => \Syan\Validator\PhoneValidator::class,
+        'url' => \Syan\Validator\UrlValidator::class,
+        'compare' => \Syan\Validator\CompareValidator::class,
+        'match' => \Syan\Validator\MatchValidator::class,
+        'call' => \Syan\Validator\CallValidator::class,
+        'file' => \Syan\Validator\FileValidator::class,
+        'image' => \Syan\Validator\ImageValidator::class,
     ];
 
     /**

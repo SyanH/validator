@@ -1,13 +1,13 @@
 <?php
 
-namespace Mix\Validator;
+namespace Syan\Validator;
 
-use Mix\Validator\Exception\InvalidArgumentException;
+use Syan\Validator\Exception\InvalidArgumentException;
 use Webman\Http\UploadFile;
 
 /**
  * Class BaseValidator
- * @package Mix\Validator
+ * @package Syan\Validator
  */
 abstract class BaseValidator
 {

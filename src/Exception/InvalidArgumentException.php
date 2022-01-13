@@ -1,10 +1,10 @@
 <?php
 
-namespace Mix\Validator\Exception;
+namespace Syan\Validator\Exception;
 
 /**
  * Class InvalidArgumentException
- * @package Mix\Validator\Exception
+ * @package Syan\Validator\Exception
  */
 class InvalidArgumentException extends \InvalidArgumentException
 {

@@ -20,7 +20,7 @@ final class MainTest extends TestCase
 
 }
 
-class UserForm extends \Mix\Validator\Validator
+class UserForm extends \Syan\Validator\Validator
 {
 
     /**

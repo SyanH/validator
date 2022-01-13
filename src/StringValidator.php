@@ -1,10 +1,10 @@
 <?php
 
-namespace Mix\Validator;
+namespace Syan\Validator;
 
 /**
  * Class StringValidator
- * @package Mix\Validator
+ * @package Syan\Validator
  */
 class StringValidator extends BaseValidator
 {
