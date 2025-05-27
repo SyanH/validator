@@ -93,7 +93,7 @@ class FileValidator extends BaseValidator
     {
         /** @var UploadFile $value */
         $value = $this->attributeValue;
-        if (!in_array($value->getUploadMineType(), $param)) {
+        if (!in_array($value->getUploadMimeType(), $param)) {
             // 设置错误消息
             $defaultMessage = "{$this->attribute}类型不在" . implode(',', $param) . "范围内.";
             $this->setError(__FUNCTION__, $defaultMessage);

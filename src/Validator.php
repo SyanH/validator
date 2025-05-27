@@ -145,7 +145,7 @@ abstract class Validator implements \JsonSerializable
             // 实例化
             $validatorClass = $this->validators[$validatorType];
             $validator = new $validatorClass([
-                'isRequired' => in_array($attribute, $scenario['required']),
+                'isRequired' => in_array($attribute, (array)$scenario['required']),
                 'options' => $rule,
                 'attribute' => $attribute,
                 'attributeValue' => $attributeValue,
